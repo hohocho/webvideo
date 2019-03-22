@@ -1,0 +1,22 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, minimum-scale=0.1">
+</head>
+<body>
+
+<script type="text/javascript" src="/static/js/jquery.min.js"></script>
+
+
+{% for i in range(count) %}
+<div style="float: left">
+    <h3 align="center">VIDEO {{i+1}}</h3>
+    <img width="427" height="320" hspace="30" vspace="30"
+         style="margin-top:0;margin-left:10px;margin-right:10px;margin-bottom:0"
+         src="http://127.0.0.1:800{{i+1}}">
+</div>
+{% endfor %}
+
+
+</body>
+</html>
+
