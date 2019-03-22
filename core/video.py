@@ -21,7 +21,6 @@ def stream(webcamId):
 
 def index(count):
     app = Sanic()
-    app.static('/static', './static')
     env = Environment(
         loader=PackageLoader('core.video', '../template/html'),
         autoescape=select_autoescape(['html', 'xml', 'tpl']),
